@@ -1,0 +1,852 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="主要为了解决自己在mac和windows之间同步管理博客的问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="不同PC之间同步管理博客">
+<meta property="og:url" content="http://yoursite.com/2017/08/03/不同PC之间同步hexo博客/index.html">
+<meta property="og:site_name" content="illya">
+<meta property="og:description" content="主要为了解决自己在mac和windows之间同步管理博客的问题">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://i.imgur.com/cn3uRsP.png">
+<meta property="og:image" content="http://i.imgur.com/Rg8SXK3.png">
+<meta property="og:image" content="http://i.imgur.com/8U8OOEm.png">
+<meta property="og:updated_time" content="2018-11-14T10:08:00.840Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="不同PC之间同步管理博客">
+<meta name="twitter:description" content="主要为了解决自己在mac和windows之间同步管理博客的问题">
+<meta name="twitter:image" content="http://i.imgur.com/cn3uRsP.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/08/03/不同PC之间同步hexo博客/">
+
+
+
+
+
+  <title> 不同PC之间同步管理博客 | illya </title>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">illya</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">love life love K-ON!</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/不同PC之间同步hexo博客/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="miyuillya">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="illya">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                不同PC之间同步管理博客
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-03T16:08:21+08:00">
+                2017-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/08/03/不同PC之间同步hexo博客/" class="leancloud_visitors" data-flag-title="不同PC之间同步管理博客">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>主要为了解决自己在mac和windows之间同步管理博客的问题<br><a id="more"></a></p>
+<blockquote>
+<p>利用git进行版本控制,实现不同PC之间的同步</p>
+</blockquote>
+<h3 id="先在远程仓库中新建一个branch-比如hexo"><a href="#先在远程仓库中新建一个branch-比如hexo" class="headerlink" title="先在远程仓库中新建一个branch,比如hexo"></a>先在远程仓库中新建一个branch,比如hexo</h3><p><img src="http://i.imgur.com/cn3uRsP.png" alt="新建一个hexo分支"></p>
+<h3 id="接着把hexo分支设置为默认分支"><a href="#接着把hexo分支设置为默认分支" class="headerlink" title="接着把hexo分支设置为默认分支"></a>接着把hexo分支设置为默认分支</h3><p><img src="http://i.imgur.com/Rg8SXK3.png" alt="把hexo分支设置为默认分支"></p>
+<h3 id="把博客的源文件上传到hexo分支"><a href="#把博客的源文件上传到hexo分支" class="headerlink" title="把博客的源文件上传到hexo分支"></a>把博客的源文件上传到hexo分支</h3><blockquote>
+<p>提示:如果你的主题(theme)文件是通过<code>git clone</code> 下载下来的话,要把主题文件夹里面的<code>.git</code>文件夹删除,不然主题无法<code>push</code>到远程仓库</p>
+</blockquote>
+<p><strong><code>git init</code></strong> <strong><em>//初始化本地仓库</em></strong></p>
+<p><strong><code>git add -A</code></strong> <strong><em>//添加本地所有文件到本地缓存区</em></strong>——-也可以使用<code>git add .</code></p>
+<p><strong><code>git commit -m &quot;bolgSourceFile&quot;</code></strong> <strong><em>//添加commit说明</em></strong></p>
+<p><strong><code>git branch hexo</code></strong> <strong><em>//添加本地仓库分支hexo</em></strong>——-如果报错:<code>fatal: A branch named &#39;hexo&#39; already exists.</code>则说明该分支已经存在</p>
+<p><strong><code>git checkout hexo</code></strong> <strong><em>//切换到hexo分支</em></strong>——-如果报错:<code>Already on &#39;hexo&#39;Your branch is up-to-date with &#39;origin/hexo&#39;.</code>则说明你已经在hexo分支</p>
+<p><strong><code>git remote add origin git@github.com:yourname/yourname.github.io.git</code></strong> <strong><em>//添加远程仓库</em></strong>——-如果报错:<code>fatal: remote origin already exists.</code>则说明远程仓库已经添加过了,有两个选择:1.执行<code>git remote rm origin</code>清除远程仓库之后再重新添加;2.啥也不管继续进行下面的操作</p>
+<p><strong><code>git push origin hexo -f</code></strong> <strong><em>//把本地仓库的源文件分支hexo强制推送到远程仓库hexo分支</em></strong>——-<code>f</code>是代表强制</p>
+<p><strong><em>上传完成:</em></strong><br><img src="http://i.imgur.com/8U8OOEm.png" alt="博客源文件上传完成"><br>上传完成之后,我们就拥有了两个远程的分支:master和hexo,其中master使我们部署成博客的分支;hexo是我们可以clone到其他PC的博客源文件的分支.</p>
+<h3 id="当我们想在其他电脑上更新博客的时候-我们可以把远程仓库hexo分支的博客源文件clone到本地上"><a href="#当我们想在其他电脑上更新博客的时候-我们可以把远程仓库hexo分支的博客源文件clone到本地上" class="headerlink" title="当我们想在其他电脑上更新博客的时候,我们可以把远程仓库hexo分支的博客源文件clone到本地上"></a>当我们想在其他电脑上更新博客的时候,我们可以把远程仓库hexo分支的博客源文件clone到本地上</h3><blockquote>
+<p>git clone -b hexo <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yourname/yourname.github.io.git</p>
+</blockquote>
+<p>进入刚刚clone下来的<code>yourname.github.io</code>文件夹里面执行<code>npm install</code></p>
+<h3 id="编辑完本地的blog之后-部署发布博客"><a href="#编辑完本地的blog之后-部署发布博客" class="headerlink" title="编辑完本地的blog之后,部署发布博客"></a>编辑完本地的blog之后,部署发布博客</h3><p>依次执行:<code>git add .</code>,<code>git commmit -m &quot;修改的内容&quot;</code>,<code>git push origin hexo</code>,同步到本地仓库分支hexo到远程仓库分支hexo</p>
+<p>部署发布博客:<code>hexo g -d</code></p>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题:"></a>遇到的问题:</h3><ul>
+<li><code>gitignore</code>文件的作用是声明不被git记录的文件,博客根目录下的<code>.gitignore</code>是hexo初始化创建的,可以删除或者直接编辑,对hexo不会有影响.<code>.gitignore</code>文件默认声明不被git记录的文件如下:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>1.<code>.deploy*</code>是hexo默认的.git配置文件夹,不需要同步<br>2.<code>public</code>内文件是根据source文件夹内容自动生成的,不需要同步,不然每次改动内容太多</p>
+<p>参考教程:<a href="https://righere.github.io/2016/10/10/install-hexo/" target="_blank" rel="noopener">搭建hexo博客并简单的实现多终端同步 </a><br>        <a href="http://chitanda.me/2015/06/18/hexo-sync-in-multiple-pc/" target="_blank" rel="noopener">利用git解决hexo博客多PC间同步问题 </a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/02/搭建Hexo+Github个人博客/" rel="next" title="搭建hexo博客(windows)">
+                <i class="fa fa-chevron-left"></i> 搭建hexo博客(windows)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/05/chocolatey-and-cmder/" rel="prev" title="chocolatey and cmder">
+                chocolatey and cmder <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="miyuillya">
+          <p class="site-author-name" itemprop="name">miyuillya</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/miyuillya" target="_blank" title="Github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Github
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#先在远程仓库中新建一个branch-比如hexo"><span class="nav-number">1.</span> <span class="nav-text">先在远程仓库中新建一个branch,比如hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接着把hexo分支设置为默认分支"><span class="nav-number">2.</span> <span class="nav-text">接着把hexo分支设置为默认分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#把博客的源文件上传到hexo分支"><span class="nav-number">3.</span> <span class="nav-text">把博客的源文件上传到hexo分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当我们想在其他电脑上更新博客的时候-我们可以把远程仓库hexo分支的博客源文件clone到本地上"><span class="nav-number">4.</span> <span class="nav-text">当我们想在其他电脑上更新博客的时候,我们可以把远程仓库hexo分支的博客源文件clone到本地上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑完本地的blog之后-部署发布博客"><span class="nav-number">5.</span> <span class="nav-text">编辑完本地的blog之后,部署发布博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">6.</span> <span class="nav-text">遇到的问题:</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">miyuillya</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("W4RUCn3sKxXxwwGpM99Hmypz-gzGzoHsz", "GXL8JRun9wFNMoUoxsljrRWr");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
